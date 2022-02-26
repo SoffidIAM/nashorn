@@ -4,6 +4,17 @@
   <artifactId>nashorn-core</artifactId>
   <version>15.3-SNAPSHOT</version>
   <name>Nashorn module with embeded isolated asm</name>
+  <licenses>
+    <license>
+      <name>GNU GPL Version 3.0</name>
+      <url>http://www.gnu.org/licenses/gpl.html</url>
+    </license>
+  </licenses>
+  <url>http://www.soffid.com/</url>
+  <scm>
+        <connection>scm:git:ssh://git@github.com:SoffidIAM/nashorn.git</connection>
+    <tag>HEAD</tag>
+  </scm>
   <build>
   	<plugins>
 		<plugin>
