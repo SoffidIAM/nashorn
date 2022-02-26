@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.8
+Created-By: Ant jar task
+Archiver-Version: n/a
+Build-Jdk: 11.0.10+9-LTS
+Built-By: n/a
+
+Name: org/openjdk/nashorn/
+Implementation-Title: OpenJDK Nashorn
+Implementation-Version: 15.3
+
