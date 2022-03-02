@@ -2295,7 +2295,7 @@ public class Parser extends AbstractParser implements Loggable {
      */
     private void returnStatement() {
         // check for return outside function
-        if (lc.getCurrentFunction().getKind() == FunctionNode.Kind.SCRIPT || lc.getCurrentFunction().getKind() == FunctionNode.Kind.MODULE) {
+        if (lc.getCurrentFunction().getKind() == FunctionNode.Kind.MODULE) {
             throw error(AbstractParser.message("invalid.return"));
         }
 
