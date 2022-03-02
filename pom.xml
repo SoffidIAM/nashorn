@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.soffid.iam</groupId>
   <artifactId>nashorn-core</artifactId>
-  <version>15.3-2-SNAPSHOT</version>
+  <version>15.3-2</version>
   <name>Nashorn module with embeded isolated asm</name>
   <licenses>
     <license>
@@ -13,7 +13,7 @@
   <url>http://www.soffid.com/</url>
   <scm>
 	  <connection>scm:git:ssh://git@github.com/SoffidIAM/nashorn.git</connection>
-    <tag>HEAD</tag>
+    <tag>nashorn-core-15.3-2</tag>
   </scm>
   <build>
   	<plugins>
