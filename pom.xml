@@ -2,8 +2,19 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.soffid.iam</groupId>
   <artifactId>nashorn-core</artifactId>
-  <version>15.3-SNAPSHOT</version>
+  <version>15.3-2-SNAPSHOT</version>
   <name>Nashorn module with embeded isolated asm</name>
+  <licenses>
+    <license>
+      <name>GNU GPL Version 3.0</name>
+      <url>http://www.gnu.org/licenses/gpl.html</url>
+    </license>
+  </licenses>
+  <url>http://www.soffid.com/</url>
+  <scm>
+	  <connection>scm:git:ssh://git@github.com:SoffidIAM/nashorn.git</connection>
+    <tag>HEAD</tag>
+  </scm>
   <build>
   	<plugins>
 		<plugin>
@@ -25,11 +36,11 @@
 							<tasks>
 						        <java classname="org.openjdk.nashorn.internal.tools.nasgen.Main" fork="true" failonerror="true">
 						            <classpath>
-						                <pathelement location="${project.build.directory}/classes"/>
+						                <pathelement location="${project.build.directory}/classes" />
 						            </classpath>
-						            <arg value="${project.build.directory}/classes"/>
-						            <arg value="org.openjdk.nashorn.internal.objects"/>
-						            <arg value="${project.build.directory}/classes"/>
+						            <arg value="${project.build.directory}/classes" />
+						            <arg value="org.openjdk.nashorn.internal.objects" />
+						            <arg value="${project.build.directory}/classes" />
 						        </java>
 							</tasks>
 						</configuration>
