@@ -31,6 +31,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.ReflectPermission;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -69,6 +70,7 @@ abstract class NashornLoader extends SecureClassLoader {
          * classes in these implementation packages.
          */
         SCRIPT_PERMISSIONS = new Permission[] {
+                new ReflectPermission("suppressAccessChecks"),
                 new RuntimePermission("accessClassInPackage." + RUNTIME_PKG),
                 new RuntimePermission("accessClassInPackage." + RUNTIME_LINKER_PKG),
                 new RuntimePermission("accessClassInPackage." + OBJECTS_PKG),
